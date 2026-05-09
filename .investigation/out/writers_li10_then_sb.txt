@@ -1,0 +1,16 @@
+Every `addiu rA, $zero, 0x0A` followed within 12 insns by `sb rA, off($rB)` (no intervening clobber of rA). These are candidates for code that sets story_progress = 0x0A (=> Tera Domain unlocked).
+
+--- file_402 hit (off=0x-19CE via $v1) ---
+    0x00003E5C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E60: 0680033c lui      $v1, 0x8006
+    0x00003E64: 09000224 addiu    $v0, $zero, 9
+    0x00003E68: 1a9d0108 j        0x67468
+    0x00003E6C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E70: 0680033c lui      $v1, 0x8006
+>>> 0x00003E74: 0a000224 addiu    $v0, $zero, 0xa
+    0x00003E78: 1a9d0108 j        0x67468
+>>> 0x00003E7C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E80: 0680023c lui      $v0, 0x8006
+    0x00003E84: 1a9d0108 j        0x67468
+    0x00003E88: 31e640a0 sb       $zero, -0x19cf($v0)
+

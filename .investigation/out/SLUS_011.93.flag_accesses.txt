@@ -1,0 +1,17 @@
+SLUS_011.93: accesses to save bytes that change between Mission 19 (post-Analogman) and Post Game (Tera Domain unlocked).
+
+--- 0x80021E38 ---
+    0x80021E20: fdff6104 bgez     $v1, 0x80021e18
+    0x80021E24: ffff4224 addiu    $v0, $v0, -1
+    0x80021E28: 0f000324 addiu    $v1, $zero, 0xf
+    0x80021E2C: 0680023c lui      $v0, 0x8006
+    0x80021E30: 20e64224 addiu    $v0, $v0, -0x19e0
+    0x80021E34: 21104300 addu     $v0, $v0, $v1
+>>> 0x80021E38: 341040a0 sb       $zero, 0x1034($v0)
+    0x80021E3C: ffff6324 addiu    $v1, $v1, -1
+    0x80021E40: fdff6104 bgez     $v1, 0x80021e38
+    0x80021E44: ffff4224 addiu    $v0, $v0, -1
+    0x80021E48: 0680023c lui      $v0, 0x8006
+    0x80021E4C: 0800e003 jr       $ra
+    0x80021E50: 64f640ac sw       $zero, -0x99c($v0)
+

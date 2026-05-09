@@ -1,0 +1,20 @@
+Full-disc sweep: jal targets in [0x80063AF0, 0x80063E80).
+
+Files scanned: 3675, files with hits: 4
+
+=== SLUS_011.93 ===
+  file 0x0000B608: jal -> 0x80063C84  (<unknown@0x80063C84>)
+
+=== file_1297 ===
+  file 0x000364E8: jal -> 0x80063DC4  (<unknown@0x80063DC4>)
+
+=== file_3358 ===
+  file 0x00000F38: jal -> 0x80063D28  (<unknown@0x80063D28>)
+
+=== file_400 ===
+  file 0x00000C24: jal -> 0x80063E34  (<unknown@0x80063E34>)
+
+=== file_403 ===
+  file 0x00000F0C: jal -> 0x80063B80  (is_story_lt_11)
+  file 0x00000F50: jal -> 0x80063B80  (is_story_lt_11)
+

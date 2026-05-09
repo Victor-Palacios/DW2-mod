@@ -1,0 +1,2 @@
+lbu rA, off($rB); ori rC, rA, MASK; sb rC, off($rB) where (off, mask) matches a bit added between Mission 19 (post-Analogman) and Post Game (Tera Domain unlocked).
+

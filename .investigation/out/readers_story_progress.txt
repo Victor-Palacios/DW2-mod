@@ -1,0 +1,204 @@
+Reads/writes of story_progress (RAM 0x8005E632, = save slot offset 0x1050).
+
+=== file_402 (loads=10 stores=10) ===
+
+--- LOAD via lbu at 0x00003AF4 (lui at 0x00003AF0) ---
+>>> 0x00003AF0: 0680023c lui      $v0, 0x8006
+>>> 0x00003AF4: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003AF8: c99b0108 j        0x66f24
+    0x00003AFC: 0200422c sltiu    $v0, $v0, 2
+    0x00003B00: 0680023c lui      $v0, 0x8006
+    0x00003B04: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B08: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B04 (lui at 0x00003B00) ---
+>>> 0x00003B00: 0680023c lui      $v0, 0x8006
+>>> 0x00003B04: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B08: c99b0108 j        0x66f24
+    0x00003B0C: 0300422c sltiu    $v0, $v0, 3
+    0x00003B10: 0680023c lui      $v0, 0x8006
+    0x00003B14: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B18: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B14 (lui at 0x00003B10) ---
+>>> 0x00003B10: 0680023c lui      $v0, 0x8006
+>>> 0x00003B14: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B18: c99b0108 j        0x66f24
+    0x00003B1C: 0400422c sltiu    $v0, $v0, 4
+    0x00003B20: 0680023c lui      $v0, 0x8006
+    0x00003B24: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B28: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B24 (lui at 0x00003B20) ---
+>>> 0x00003B20: 0680023c lui      $v0, 0x8006
+>>> 0x00003B24: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B28: c99b0108 j        0x66f24
+    0x00003B2C: 0500422c sltiu    $v0, $v0, 5
+    0x00003B30: 0680023c lui      $v0, 0x8006
+    0x00003B34: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B38: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B34 (lui at 0x00003B30) ---
+>>> 0x00003B30: 0680023c lui      $v0, 0x8006
+>>> 0x00003B34: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B38: c99b0108 j        0x66f24
+    0x00003B3C: 0600422c sltiu    $v0, $v0, 6
+    0x00003B40: 0680023c lui      $v0, 0x8006
+    0x00003B44: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B48: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B44 (lui at 0x00003B40) ---
+>>> 0x00003B40: 0680023c lui      $v0, 0x8006
+>>> 0x00003B44: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B48: c99b0108 j        0x66f24
+    0x00003B4C: 0700422c sltiu    $v0, $v0, 7
+    0x00003B50: 0680023c lui      $v0, 0x8006
+    0x00003B54: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B58: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B54 (lui at 0x00003B50) ---
+>>> 0x00003B50: 0680023c lui      $v0, 0x8006
+>>> 0x00003B54: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B58: c99b0108 j        0x66f24
+    0x00003B5C: 0800422c sltiu    $v0, $v0, 8
+    0x00003B60: 0680023c lui      $v0, 0x8006
+    0x00003B64: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B68: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B64 (lui at 0x00003B60) ---
+>>> 0x00003B60: 0680023c lui      $v0, 0x8006
+>>> 0x00003B64: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B68: c99b0108 j        0x66f24
+    0x00003B6C: 0900422c sltiu    $v0, $v0, 9
+    0x00003B70: 0680023c lui      $v0, 0x8006
+    0x00003B74: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B78: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B74 (lui at 0x00003B70) ---
+>>> 0x00003B70: 0680023c lui      $v0, 0x8006
+>>> 0x00003B74: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B78: c99b0108 j        0x66f24
+    0x00003B7C: 0a00422c sltiu    $v0, $v0, 0xa
+    0x00003B80: 0680023c lui      $v0, 0x8006
+    0x00003B84: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B88: c99b0108 j        0x66f24
+
+--- LOAD via lbu at 0x00003B84 (lui at 0x00003B80) ---
+>>> 0x00003B80: 0680023c lui      $v0, 0x8006
+>>> 0x00003B84: 32e64290 lbu      $v0, -0x19ce($v0)
+    0x00003B88: c99b0108 j        0x66f24
+    0x00003B8C: 0b00422c sltiu    $v0, $v0, 0xb
+    0x00003B90: 9e87000c jal      0x21e78
+    0x00003B94: c6020424 addiu    $a0, $zero, 0x2c6
+    0x00003B98: 0a004010 beqz     $v0, 0x3bc4
+
+--- STORE via sb at 0x00003DEC (lui at 0x00003DE0) ---
+>>> 0x00003DE0: 0680033c lui      $v1, 0x8006
+    0x00003DE4: 01000224 addiu    $v0, $zero, 1
+    0x00003DE8: 1a9d0108 j        0x67468
+>>> 0x00003DEC: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003DF0: 0680033c lui      $v1, 0x8006
+    0x00003DF4: 02000224 addiu    $v0, $zero, 2
+    0x00003DF8: 1a9d0108 j        0x67468
+    0x00003DFC: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E00: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003DFC (lui at 0x00003DF0) ---
+>>> 0x00003DF0: 0680033c lui      $v1, 0x8006
+    0x00003DF4: 02000224 addiu    $v0, $zero, 2
+    0x00003DF8: 1a9d0108 j        0x67468
+>>> 0x00003DFC: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E00: 0680033c lui      $v1, 0x8006
+    0x00003E04: 03000224 addiu    $v0, $zero, 3
+    0x00003E08: 1a9d0108 j        0x67468
+    0x00003E0C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E10: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003E0C (lui at 0x00003E00) ---
+>>> 0x00003E00: 0680033c lui      $v1, 0x8006
+    0x00003E04: 03000224 addiu    $v0, $zero, 3
+    0x00003E08: 1a9d0108 j        0x67468
+>>> 0x00003E0C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E10: 0680033c lui      $v1, 0x8006
+    0x00003E14: 04000224 addiu    $v0, $zero, 4
+    0x00003E18: 1a9d0108 j        0x67468
+    0x00003E1C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E20: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003E1C (lui at 0x00003E10) ---
+>>> 0x00003E10: 0680033c lui      $v1, 0x8006
+    0x00003E14: 04000224 addiu    $v0, $zero, 4
+    0x00003E18: 1a9d0108 j        0x67468
+>>> 0x00003E1C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E20: 0680033c lui      $v1, 0x8006
+    0x00003E24: 05000224 addiu    $v0, $zero, 5
+    0x00003E28: 1a9d0108 j        0x67468
+    0x00003E2C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E30: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003E2C (lui at 0x00003E20) ---
+>>> 0x00003E20: 0680033c lui      $v1, 0x8006
+    0x00003E24: 05000224 addiu    $v0, $zero, 5
+    0x00003E28: 1a9d0108 j        0x67468
+>>> 0x00003E2C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E30: 0680033c lui      $v1, 0x8006
+    0x00003E34: 06000224 addiu    $v0, $zero, 6
+    0x00003E38: 1a9d0108 j        0x67468
+    0x00003E3C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E40: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003E3C (lui at 0x00003E30) ---
+>>> 0x00003E30: 0680033c lui      $v1, 0x8006
+    0x00003E34: 06000224 addiu    $v0, $zero, 6
+    0x00003E38: 1a9d0108 j        0x67468
+>>> 0x00003E3C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E40: 0680033c lui      $v1, 0x8006
+    0x00003E44: 07000224 addiu    $v0, $zero, 7
+    0x00003E48: 1a9d0108 j        0x67468
+    0x00003E4C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E50: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003E4C (lui at 0x00003E40) ---
+>>> 0x00003E40: 0680033c lui      $v1, 0x8006
+    0x00003E44: 07000224 addiu    $v0, $zero, 7
+    0x00003E48: 1a9d0108 j        0x67468
+>>> 0x00003E4C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E50: 0680033c lui      $v1, 0x8006
+    0x00003E54: 08000224 addiu    $v0, $zero, 8
+    0x00003E58: 1a9d0108 j        0x67468
+    0x00003E5C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E60: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003E5C (lui at 0x00003E50) ---
+>>> 0x00003E50: 0680033c lui      $v1, 0x8006
+    0x00003E54: 08000224 addiu    $v0, $zero, 8
+    0x00003E58: 1a9d0108 j        0x67468
+>>> 0x00003E5C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E60: 0680033c lui      $v1, 0x8006
+    0x00003E64: 09000224 addiu    $v0, $zero, 9
+    0x00003E68: 1a9d0108 j        0x67468
+    0x00003E6C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E70: 0680033c lui      $v1, 0x8006
+
+--- STORE via sb at 0x00003E6C (lui at 0x00003E60) ---
+>>> 0x00003E60: 0680033c lui      $v1, 0x8006
+    0x00003E64: 09000224 addiu    $v0, $zero, 9
+    0x00003E68: 1a9d0108 j        0x67468
+>>> 0x00003E6C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E70: 0680033c lui      $v1, 0x8006
+    0x00003E74: 0a000224 addiu    $v0, $zero, 0xa
+    0x00003E78: 1a9d0108 j        0x67468
+    0x00003E7C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E80: 0680023c lui      $v0, 0x8006
+
+--- STORE via sb at 0x00003E7C (lui at 0x00003E70) ---
+>>> 0x00003E70: 0680033c lui      $v1, 0x8006
+    0x00003E74: 0a000224 addiu    $v0, $zero, 0xa
+    0x00003E78: 1a9d0108 j        0x67468
+>>> 0x00003E7C: 32e662a0 sb       $v0, -0x19ce($v1)
+    0x00003E80: 0680023c lui      $v0, 0x8006
+    0x00003E84: 1a9d0108 j        0x67468
+    0x00003E88: 31e640a0 sb       $zero, -0x19cf($v0)
+    0x00003E8C: 0680033c lui      $v1, 0x8006
+    0x00003E90: 01000224 addiu    $v0, $zero, 1
+

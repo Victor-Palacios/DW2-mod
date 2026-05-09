@@ -1,0 +1,65 @@
+=== is_story_lt_10 (0x80063b70) ===
+  file_403: 1 ref(s) at 0x0000FCE0
+  total: 1
+
+=== is_story_lt_11 (0x80063b80) ===
+  total: 0
+
+=== is_story_lt_2 (0x80063af0) ===
+  total: 0
+
+=== is_story_lt_3 (0x80063b00) ===
+  file_3089: 1 ref(s) at 0x0000168F
+  total: 1
+
+=== is_story_lt_4 (0x80063b10) ===
+  total: 0
+
+=== is_story_lt_5 (0x80063b20) ===
+  file_3406: 1 ref(s) at 0x00170F86
+  total: 1
+
+=== is_story_lt_6 (0x80063b30) ===
+  file_400: 1 ref(s) at 0x00000004
+  total: 1
+
+=== is_story_lt_7 (0x80063b40) ===
+  total: 0
+
+=== is_story_lt_8 (0x80063b50) ===
+  total: 0
+
+=== is_story_lt_9 (0x80063b60) ===
+  total: 0
+
+=== set_story_1 (0x80063de0) ===
+  total: 0
+
+=== set_story_10 (0x80063e70) ===
+  total: 0
+
+=== set_story_2 (0x80063df0) ===
+  total: 0
+
+=== set_story_3 (0x80063e00) ===
+  file_3405: 1 ref(s) at 0x00007124
+  total: 1
+
+=== set_story_4 (0x80063e10) ===
+  total: 0
+
+=== set_story_5 (0x80063e20) ===
+  total: 0
+
+=== set_story_6 (0x80063e30) ===
+  total: 0
+
+=== set_story_7 (0x80063e40) ===
+  total: 0
+
+=== set_story_8 (0x80063e50) ===
+  total: 0
+
+=== set_story_9 (0x80063e60) ===
+  total: 0
+

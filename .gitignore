@@ -1,0 +1,25 @@
+# Disc images and saves
+*.chd
+*.bin
+*.cue
+*.mcr
+
+# Reference materials and assets (kept locally only)
+.dw2tt-ref/
+*.webp
+
+# Backups (created before risky operations)
+*.backup
+
+# Python
+__pycache__/
+*.pyc
+digimon2/
+
+# Investigation throwaway data — keep the scripts and reports, drop the
+# extracted disc image and any large generated dumps.
+.investigation/dw2.bin
+.investigation/dw2.cue
+
+# OS
+.DS_Store

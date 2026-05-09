@@ -1,0 +1,80 @@
+Call sites for the story_progress library (file_402/STAG2000.PRO).
+STAGxxxx.PRO files are assumed to load at RAM 0x80060000;
+for STAG files the disassembly shown is at runtime addresses.
+
+=== is_story_lt_10 (target 0x80063B70, 0 call sites) ===
+
+=== is_story_lt_11 (target 0x80063B80, 2 call sites) ===
+
+  file_403: jal at file 0x00000F0C (RAM 0x80060F0C)
+          0x80060EEC: 0e004018 blez     $v0, 0x80060f28
+          0x80060EF0: d80220ae sw       $zero, 0x2d8($s1)
+          0x80060EF4: 21802002 move     $s0, $s1
+          0x80060EF8: e801048e lw       $a0, 0x1e8($s0)
+          0x80060EFC: eb8f000c jal      0x80023fac
+          0x80060F00: 01005226 addiu    $s2, $s2, 1
+          0x80060F04: 21208002 move     $a0, $s4
+          0x80060F08: e801058e lw       $a1, 0x1e8($s0)
+      >>> 0x80060F0C: e08e010c jal      0x80063b80
+          0x80060F10: 21304000 move     $a2, $v0
+          0x80060F14: dc02228e lw       $v0, 0x2dc($s1)
+          0x80060F18: 00000000 nop      
+          0x80060F1C: 2a104202 slt      $v0, $s2, $v0
+          0x80060F20: f5ff4014 bnez     $v0, 0x80060ef8
+          0x80060F24: 04001026 addiu    $s0, $s0, 4
+          0x80060F28: e002228e lw       $v0, 0x2e0($s1)
+
+  file_403: jal at file 0x00000F50 (RAM 0x80060F50)
+          0x80060F30: 0e004018 blez     $v0, 0x80060f6c
+          0x80060F34: 21900000 move     $s2, $zero
+          0x80060F38: 21802002 move     $s0, $s1
+          0x80060F3C: 6002048e lw       $a0, 0x260($s0)
+          0x80060F40: eb8f000c jal      0x80023fac
+          0x80060F44: 01005226 addiu    $s2, $s2, 1
+          0x80060F48: 21208002 move     $a0, $s4
+          0x80060F4C: 6002058e lw       $a1, 0x260($s0)
+      >>> 0x80060F50: e08e010c jal      0x80063b80
+          0x80060F54: 21304000 move     $a2, $v0
+          0x80060F58: e002228e lw       $v0, 0x2e0($s1)
+          0x80060F5C: 00000000 nop      
+          0x80060F60: 2a104202 slt      $v0, $s2, $v0
+          0x80060F64: f5ff4014 bnez     $v0, 0x80060f3c
+          0x80060F68: 04001026 addiu    $s0, $s0, 4
+          0x80060F6C: 5945000c jal      0x80011564
+
+=== is_story_lt_2 (target 0x80063AF0, 0 call sites) ===
+
+=== is_story_lt_3 (target 0x80063B00, 0 call sites) ===
+
+=== is_story_lt_4 (target 0x80063B10, 0 call sites) ===
+
+=== is_story_lt_5 (target 0x80063B20, 0 call sites) ===
+
+=== is_story_lt_6 (target 0x80063B30, 0 call sites) ===
+
+=== is_story_lt_7 (target 0x80063B40, 0 call sites) ===
+
+=== is_story_lt_8 (target 0x80063B50, 0 call sites) ===
+
+=== is_story_lt_9 (target 0x80063B60, 0 call sites) ===
+
+=== set_story_1 (target 0x80063DE0, 0 call sites) ===
+
+=== set_story_10 (target 0x80063E70, 0 call sites) ===
+
+=== set_story_2 (target 0x80063DF0, 0 call sites) ===
+
+=== set_story_3 (target 0x80063E00, 0 call sites) ===
+
+=== set_story_4 (target 0x80063E10, 0 call sites) ===
+
+=== set_story_5 (target 0x80063E20, 0 call sites) ===
+
+=== set_story_6 (target 0x80063E30, 0 call sites) ===
+
+=== set_story_7 (target 0x80063E40, 0 call sites) ===
+
+=== set_story_8 (target 0x80063E50, 0 call sites) ===
+
+=== set_story_9 (target 0x80063E60, 0 call sites) ===
+

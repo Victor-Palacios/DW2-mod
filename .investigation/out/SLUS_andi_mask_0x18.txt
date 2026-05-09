@@ -1,0 +1,2 @@
+SLUS: 0 'andi rX, rY, 0x18' candidates (bit-test of a flag that flips on at Post Game?).
+
