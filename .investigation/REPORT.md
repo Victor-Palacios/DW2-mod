@@ -1,5 +1,12 @@
 # Investigation: unlocking Tera Domain after the 2nd-to-last boss
 
+> ⚠️ **The hypothesis below was tested in-game and proved wrong.** See
+> [`POSTSCRIPT_tera_domain.md`](POSTSCRIPT_tera_domain.md) for what the
+> falsification revealed and what to investigate next. The structural
+> findings (story library layout, RAM addresses, record shape) are still
+> correct; the *interpretation* of which gate the `0xFCE0` record
+> controls is wrong.
+
 **Status:** investigation only — no changes made to `patch_dw2.py` or the
 disc image. Per scope: locate the gate, identify the exact byte(s) to
 change, and assess risk.
