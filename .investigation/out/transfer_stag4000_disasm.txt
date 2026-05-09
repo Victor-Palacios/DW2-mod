@@ -1,0 +1,399 @@
+
+================================================================================
+DigiBeetlePatcher at STAG4000 + 0x0940
+================================================================================
+
+  0x80060840: lwl      $t0, 3($v1)                    
+  0x80060844: lwr      $t0, ($v1)                     
+  0x80060848: lwl      $t1, 7($v1)                    
+  0x8006084C: lwr      $t1, 4($v1)                    
+  0x80060850: lwl      $t2, 0xb($v1)                  
+  0x80060854: lwr      $t2, 8($v1)                    
+  0x80060858: lwl      $t3, 0xf($v1)                  
+  0x8006085C: lwr      $t3, 0xc($v1)                  
+  0x80060860: swl      $t0, 3($a0)                    
+  0x80060864: swr      $t0, ($a0)                     
+  0x80060868: swl      $t1, 7($a0)                    
+  0x8006086C: swr      $t1, 4($a0)                    
+  0x80060870: swl      $t2, 0xb($a0)                  
+  0x80060874: swr      $t2, 8($a0)                    
+  0x80060878: swl      $t3, 0xf($a0)                  
+  0x8006087C: swr      $t3, 0xc($a0)                  
+  0x80060880: addiu    $v1, $v1, 0x10                 
+  0x80060884: bne      $v1, $v0, 0x80060840           
+  0x80060888: addiu    $a0, $a0, 0x10                 
+  0x8006088C: j        0x80063c28                     
+  0x80060890: lui      $v0, 0x8005                    
+  0x80060894: addiu    $v0, $v1, 0x20                 
+  0x80060898: lw       $t0, ($v1)                     
+  0x8006089C: lw       $t1, 4($v1)                    
+  0x800608A0: lw       $t2, 8($v1)                    
+  0x800608A4: lw       $t3, 0xc($v1)                  
+  0x800608A8: sw       $t0, ($a0)                     
+  0x800608AC: sw       $t1, 4($a0)                    
+  0x800608B0: sw       $t2, 8($a0)                    
+  0x800608B4: sw       $t3, 0xc($a0)                  
+  0x800608B8: addiu    $v1, $v1, 0x10                 
+  0x800608BC: bne      $v1, $v0, 0x80060898           
+  0x800608C0: addiu    $a0, $a0, 0x10                 
+  0x800608C4: lui      $v0, 0x8005                    
+  0x800608C8: lw       $v0, 0x720($v0)                
+  0x800608CC: lwl      $t0, 3($v1)                    
+  0x800608D0: lwr      $t0, ($v1)                     
+  0x800608D4: nop                                     
+  0x800608D8: swl      $t0, 3($a0)                    
+  0x800608DC: swr      $t0, ($a0)                     
+  0x800608E0: lhu      $s0, 0x2c($v0)                 
+  0x800608E4: nop                                     
+  0x800608E8: beqz     $s0, 0x80060900                
+  0x800608EC: addiu    $v1, $s0, -0xea                
+  0x800608F0: sll      $v0, $v1, 1                    
+  0x800608F4: addu     $v0, $v0, $v1                  
+  0x800608F8: j        0x80063c64                     
+  0x800608FC: sll      $a2, $v0, 1                    
+  0x80060900: move     $a2, $zero                     
+  0x80060904: lui      $v0, 0x8005                    
+  0x80060908: lw       $a0, 0x720($v0)                
+  0x8006090C: nop                                     
+  0x80060910: lhu      $v0, 0x36($a0)                 
+  0x80060914: nop                                     
+  0x80060918: beqz     $v0, 0x8006092c                
+  0x8006091C: move     $s0, $a2                       
+  0x80060920: move     $v1, $v0                       
+  0x80060924: addiu    $v0, $s0, -0x4f                
+  0x80060928: addu     $s0, $v0, $v1                  
+  0x8006092C: slti     $v0, $s0, 0x12                 
+  0x80060930: beqz     $v0, 0x80060948                
+  0x80060934: sll      $v0, $s0, 1                    
+  0x80060938: addu     $v0, $sp, $v0                  
+  0x8006093C: lh       $s0, 0x18($v0)                 
+  0x80060940: j        0x80063cac                      <<<< TARGET
+  0x80060944: nop                                     
+  0x80060948: addiu    $s0, $zero, 0x1f8              
+  0x8006094C: jal      0x80021e78                     
+  0x80060950: addiu    $a0, $zero, 0x68               
+  0x80060954: beqz     $v0, 0x80060960                
+  0x80060958: move     $a0, $zero                     
+  0x8006095C: addiu    $s0, $zero, 0x20b              
+  0x80060960: lui      $s1, 0x8007                    
+  0x80060964: lw       $v0, 0x2b60($s1)               
+  0x80060968: move     $a1, $a0                       
+  0x8006096C: lh       $v1, 0x20($v0)                 
+  0x80060970: move     $a2, $s0                       
+  0x80060974: sw       $v1, 0x10($sp)                 
+  0x80060978: lh       $v0, 0x22($v0)                 
+  0x8006097C: move     $a3, $a0                       
+  0x80060980: jal      0x8006d4e0                     
+  0x80060984: sw       $v0, 0x14($sp)                 
+  0x80060988: lw       $v1, 0x2b60($s1)               
+  0x8006098C: nop                                     
+  0x80060990: lh       $v0, 0x24($v1)                 
+  0x80060994: addiu    $s0, $zero, -1                 
+  0x80060998: beq      $v0, $s0, 0x800609c0           
+  0x8006099C: addiu    $a0, $zero, 2                  
+  0x800609A0: move     $a1, $zero                     
+  0x800609A4: addiu    $a2, $zero, 0x258              
+  0x800609A8: sw       $v0, 0x10($sp)                 
+  0x800609AC: lh       $v0, 0x26($v1)                 
+  0x800609B0: move     $a3, $a1                       
+  0x800609B4: jal      0x8006d4e0                     
+  0x800609B8: sw       $v0, 0x14($sp)                 
+  0x800609BC: lw       $v1, 0x2b60($s1)               
+  0x800609C0: nop                                     
+  0x800609C4: lh       $v0, 0x28($v1)                 
+  0x800609C8: nop                                     
+  0x800609CC: beq      $v0, $s0, 0x800609f0           
+  0x800609D0: addiu    $a0, $zero, 3                  
+  0x800609D4: move     $a1, $zero                     
+  0x800609D8: addiu    $a2, $zero, 0x259              
+  0x800609DC: sw       $v0, 0x10($sp)                 
+  0x800609E0: lh       $v0, 0x2a($v1)                 
+  0x800609E4: move     $a3, $a1                       
+  0x800609E8: jal      0x8006d4e0                     
+  0x800609EC: sw       $v0, 0x14($sp)                 
+  0x800609F0: jal      0x8006d738                     
+  0x800609F4: lui      $s3, 0x8005                    
+  0x800609F8: jal      0x8006da18                     
+  0x800609FC: nop                                     
+  0x80060A00: jal      0x8006dddc                     
+  0x80060A04: nop                                     
+  0x80060A08: jal      0x800709dc                     
+  0x80060A0C: nop                                     
+  0x80060A10: jal      0x8006e024                     
+  0x80060A14: nop                                     
+  0x80060A18: jal      0x80071db4                     
+  0x80060A1C: nop                                     
+  0x80060A20: jal      0x8006ed5c                     
+  0x80060A24: nop                                     
+  0x80060A28: jal      0x80070a7c                     
+  0x80060A2C: nop                                     
+  0x80060A30: lw       $v0, 0x71c($s3)                
+  0x80060A34: nop                                     
+  0x80060A38: sb       $zero, 2($v0)                  
+  0x80060A3C: lw       $v0, 0x71c($s3)                
+
+================================================================================
+DigimonGiftPatcher_1 at STAG4000 + 0x7060
+================================================================================
+
+  0x80066F60: j        0x8006a47c                     
+  0x80066F64: nop                                     
+  0x80066F68: lw       $v0, 0x20($s2)                 
+  0x80066F6C: nop                                     
+  0x80066F70: move     $v1, $v0                       
+  0x80066F74: addiu    $v0, $v0, 1                    
+  0x80066F78: slti     $v1, $v1, 0x1f                 
+  0x80066F7C: bnez     $v1, 0x8006711c                
+  0x80066F80: sw       $v0, 0x20($s2)                 
+  0x80066F84: lw       $s0, 0x10($s3)                 
+  0x80066F88: lui      $s1, 0x1fd                     
+  0x80066F8C: lbu      $v0, 0xa($s0)                  
+  0x80066F90: nop                                     
+  0x80066F94: sltiu    $v0, $v0, 9                    
+  0x80066F98: beqz     $v0, 0x80067058                
+  0x80066F9C: ori      $s1, $s1, 0x50                 
+  0x80066FA0: lui      $v0, 0x8007                    
+  0x80066FA4: lw       $v0, 0x2b60($v0)               
+  0x80066FA8: nop                                     
+  0x80066FAC: lbu      $a0, 0xe0($v0)                 
+  0x80066FB0: jal      0x8001e0c0                     
+  0x80066FB4: nop                                     
+  0x80066FB8: move     $v1, $v0                       
+  0x80066FBC: slti     $v0, $v1, 0x25                 
+  0x80066FC0: beqz     $v0, 0x80066fd0                
+  0x80066FC4: slti     $v0, $v1, 0x22                 
+  0x80066FC8: beqz     $v0, 0x80066fd4                
+  0x80066FCC: addiu    $v1, $v1, -0x22                
+  0x80066FD0: addiu    $v1, $zero, 3                  
+  0x80066FD4: addiu    $v0, $zero, 3                  
+  0x80066FD8: beq      $v1, $v0, 0x80066ff0           
+  0x80066FDC: nop                                     
+  0x80066FE0: lbu      $v0, 3($s0)                    
+  0x80066FE4: nop                                     
+  0x80066FE8: bne      $v1, $v0, 0x80067058           
+  0x80066FEC: nop                                     
+  0x80066FF0: jal      0x80071180                     
+  0x80066FF4: nop                                     
+  0x80066FF8: lui      $v1, 0x8007                    
+  0x80066FFC: lbu      $a0, 0xa($s0)                  
+  0x80067000: addiu    $v1, $v1, 0x2888               
+  0x80067004: addu     $v1, $a0, $v1                  
+  0x80067008: lbu      $v1, ($v1)                     
+  0x8006700C: nop                                     
+  0x80067010: slt      $v0, $v0, $v1                  
+  0x80067014: beqz     $v0, 0x80067058                
+  0x80067018: addiu    $v0, $a0, 1                    
+  0x8006701C: sb       $v0, 0xa($s0)                  
+  0x80067020: lui      $v0, 0x8007                    
+  0x80067024: lw       $v0, 0x2b60($v0)               
+  0x80067028: nop                                     
+  0x8006702C: lbu      $a0, 0xe0($v0)                 
+  0x80067030: jal      0x8001e0e4                     
+  0x80067034: lui      $s1, 0x1fd                     
+  0x80067038: lui      $v1, 0x8007                    
+  0x8006703C: addiu    $v1, $v1, 0x2894               
+  0x80067040: addu     $v0, $v0, $v1                  
+  0x80067044: lbu      $v1, -1($v0)                   
+  0x80067048: lhu      $v0, 0xc($s0)                  
+  0x8006704C: ori      $s1, $s1, 0x4f                 
+  0x80067050: addu     $v0, $v0, $v1                  
+  0x80067054: sh       $v0, 0xc($s0)                  
+  0x80067058: lh       $a0, 0x10($s0)                 
+  0x8006705C: jal      0x8001e758                     
+  0x80067060: nop                                      <<<< TARGET
+  0x80067064: lui      $v1, 0x8007                    
+  0x80067068: lw       $v1, 0x2b60($v1)               
+  0x8006706C: nop                                     
+  0x80067070: lbu      $a0, 0xe0($v1)                 
+  0x80067074: jal      0x8001e048                     
+  0x80067078: move     $s0, $v0                       
+  0x8006707C: addiu    $a0, $zero, 1                  
+  0x80067080: move     $a1, $s1                       
+  0x80067084: move     $a2, $s0                       
+  0x80067088: jal      0x80067610                     
+  0x8006708C: move     $a3, $v0                       
+  0x80067090: j        0x8006a42c                     
+  0x80067094: nop                                     
+  0x80067098: jal      0x80067704                     
+  0x8006709C: addiu    $a0, $zero, 1                  
+  0x800670A0: addiu    $v1, $zero, 1                  
+  0x800670A4: bne      $v0, $v1, 0x8006711c           
+  0x800670A8: addiu    $a0, $s1, 0x18                 
+  0x800670AC: jal      0x800651c0                     
+  0x800670B0: addiu    $a1, $zero, 8                  
+  0x800670B4: lui      $v0, 0x8007                    
+  0x800670B8: lw       $v0, 0x2aa4($v0)               
+  0x800670BC: nop                                     
+  0x800670C0: lw       $a0, 0x14($v0)                 
+  0x800670C4: jal      0x800115c0                     
+  0x800670C8: addiu    $a1, $zero, 2                  
+  0x800670CC: jal      0x80011580                     
+  0x800670D0: move     $a0, $s2                       
+  0x800670D4: j        0x8006a47c                     
+  0x800670D8: nop                                     
+  0x800670DC: lui      $v0, 0x8007                    
+  0x800670E0: lw       $v0, 0x2aa4($v0)               
+  0x800670E4: nop                                     
+  0x800670E8: lw       $v0, 0x14($v0)                 
+  0x800670EC: nop                                     
+  0x800670F0: beqz     $v0, 0x8006711c                
+  0x800670F4: move     $a0, $s2                       
+  0x800670F8: jal      0x800115dc                     
+  0x800670FC: addiu    $a1, $zero, 6                  
+  0x80067100: lui      $v1, 0x8007                    
+  0x80067104: lui      $v0, 0x8005                    
+  0x80067108: lw       $v0, 0x720($v0)                
+  0x8006710C: lw       $v1, 0x2b60($v1)               
+  0x80067110: lbu      $v0, ($v0)                     
+  0x80067114: nop                                     
+  0x80067118: sh       $v0, 0x7e($v1)                 
+  0x8006711C: lw       $ra, 0x20($sp)                 
+  0x80067120: lw       $s3, 0x1c($sp)                 
+  0x80067124: lw       $s2, 0x18($sp)                 
+  0x80067128: lw       $s1, 0x14($sp)                 
+  0x8006712C: lw       $s0, 0x10($sp)                 
+  0x80067130: jr       $ra                            
+  0x80067134: addiu    $sp, $sp, 0x28                 
+  0x80067138: addiu    $sp, $sp, -0x20                
+  0x8006713C: sw       $s2, 0x18($sp)                 
+  0x80067140: lui      $s2, 0x8007                    
+  0x80067144: lw       $v0, 0x2b60($s2)               
+  0x80067148: sw       $s0, 0x10($sp)                 
+  0x8006714C: move     $s0, $a0                       
+  0x80067150: sw       $s1, 0x14($sp)                 
+  0x80067154: addiu    $s1, $zero, 1                  
+  0x80067158: sw       $ra, 0x1c($sp)                 
+  0x8006715C: lw       $v0, 0x40($v0)                 
+
+================================================================================
+DigimonGiftPatcher_2 at STAG4000 + 0x706C
+================================================================================
+
+  0x80066F6C: nop                                     
+  0x80066F70: move     $v1, $v0                       
+  0x80066F74: addiu    $v0, $v0, 1                    
+  0x80066F78: slti     $v1, $v1, 0x1f                 
+  0x80066F7C: bnez     $v1, 0x8006711c                
+  0x80066F80: sw       $v0, 0x20($s2)                 
+  0x80066F84: lw       $s0, 0x10($s3)                 
+  0x80066F88: lui      $s1, 0x1fd                     
+  0x80066F8C: lbu      $v0, 0xa($s0)                  
+  0x80066F90: nop                                     
+  0x80066F94: sltiu    $v0, $v0, 9                    
+  0x80066F98: beqz     $v0, 0x80067058                
+  0x80066F9C: ori      $s1, $s1, 0x50                 
+  0x80066FA0: lui      $v0, 0x8007                    
+  0x80066FA4: lw       $v0, 0x2b60($v0)               
+  0x80066FA8: nop                                     
+  0x80066FAC: lbu      $a0, 0xe0($v0)                 
+  0x80066FB0: jal      0x8001e0c0                     
+  0x80066FB4: nop                                     
+  0x80066FB8: move     $v1, $v0                       
+  0x80066FBC: slti     $v0, $v1, 0x25                 
+  0x80066FC0: beqz     $v0, 0x80066fd0                
+  0x80066FC4: slti     $v0, $v1, 0x22                 
+  0x80066FC8: beqz     $v0, 0x80066fd4                
+  0x80066FCC: addiu    $v1, $v1, -0x22                
+  0x80066FD0: addiu    $v1, $zero, 3                  
+  0x80066FD4: addiu    $v0, $zero, 3                  
+  0x80066FD8: beq      $v1, $v0, 0x80066ff0           
+  0x80066FDC: nop                                     
+  0x80066FE0: lbu      $v0, 3($s0)                    
+  0x80066FE4: nop                                     
+  0x80066FE8: bne      $v1, $v0, 0x80067058           
+  0x80066FEC: nop                                     
+  0x80066FF0: jal      0x80071180                     
+  0x80066FF4: nop                                     
+  0x80066FF8: lui      $v1, 0x8007                    
+  0x80066FFC: lbu      $a0, 0xa($s0)                  
+  0x80067000: addiu    $v1, $v1, 0x2888               
+  0x80067004: addu     $v1, $a0, $v1                  
+  0x80067008: lbu      $v1, ($v1)                     
+  0x8006700C: nop                                     
+  0x80067010: slt      $v0, $v0, $v1                  
+  0x80067014: beqz     $v0, 0x80067058                
+  0x80067018: addiu    $v0, $a0, 1                    
+  0x8006701C: sb       $v0, 0xa($s0)                  
+  0x80067020: lui      $v0, 0x8007                    
+  0x80067024: lw       $v0, 0x2b60($v0)               
+  0x80067028: nop                                     
+  0x8006702C: lbu      $a0, 0xe0($v0)                 
+  0x80067030: jal      0x8001e0e4                     
+  0x80067034: lui      $s1, 0x1fd                     
+  0x80067038: lui      $v1, 0x8007                    
+  0x8006703C: addiu    $v1, $v1, 0x2894               
+  0x80067040: addu     $v0, $v0, $v1                  
+  0x80067044: lbu      $v1, -1($v0)                   
+  0x80067048: lhu      $v0, 0xc($s0)                  
+  0x8006704C: ori      $s1, $s1, 0x4f                 
+  0x80067050: addu     $v0, $v0, $v1                  
+  0x80067054: sh       $v0, 0xc($s0)                  
+  0x80067058: lh       $a0, 0x10($s0)                 
+  0x8006705C: jal      0x8001e758                     
+  0x80067060: nop                                     
+  0x80067064: lui      $v1, 0x8007                    
+  0x80067068: lw       $v1, 0x2b60($v1)               
+  0x8006706C: nop                                      <<<< TARGET
+  0x80067070: lbu      $a0, 0xe0($v1)                 
+  0x80067074: jal      0x8001e048                     
+  0x80067078: move     $s0, $v0                       
+  0x8006707C: addiu    $a0, $zero, 1                  
+  0x80067080: move     $a1, $s1                       
+  0x80067084: move     $a2, $s0                       
+  0x80067088: jal      0x80067610                     
+  0x8006708C: move     $a3, $v0                       
+  0x80067090: j        0x8006a42c                     
+  0x80067094: nop                                     
+  0x80067098: jal      0x80067704                     
+  0x8006709C: addiu    $a0, $zero, 1                  
+  0x800670A0: addiu    $v1, $zero, 1                  
+  0x800670A4: bne      $v0, $v1, 0x8006711c           
+  0x800670A8: addiu    $a0, $s1, 0x18                 
+  0x800670AC: jal      0x800651c0                     
+  0x800670B0: addiu    $a1, $zero, 8                  
+  0x800670B4: lui      $v0, 0x8007                    
+  0x800670B8: lw       $v0, 0x2aa4($v0)               
+  0x800670BC: nop                                     
+  0x800670C0: lw       $a0, 0x14($v0)                 
+  0x800670C4: jal      0x800115c0                     
+  0x800670C8: addiu    $a1, $zero, 2                  
+  0x800670CC: jal      0x80011580                     
+  0x800670D0: move     $a0, $s2                       
+  0x800670D4: j        0x8006a47c                     
+  0x800670D8: nop                                     
+  0x800670DC: lui      $v0, 0x8007                    
+  0x800670E0: lw       $v0, 0x2aa4($v0)               
+  0x800670E4: nop                                     
+  0x800670E8: lw       $v0, 0x14($v0)                 
+  0x800670EC: nop                                     
+  0x800670F0: beqz     $v0, 0x8006711c                
+  0x800670F4: move     $a0, $s2                       
+  0x800670F8: jal      0x800115dc                     
+  0x800670FC: addiu    $a1, $zero, 6                  
+  0x80067100: lui      $v1, 0x8007                    
+  0x80067104: lui      $v0, 0x8005                    
+  0x80067108: lw       $v0, 0x720($v0)                
+  0x8006710C: lw       $v1, 0x2b60($v1)               
+  0x80067110: lbu      $v0, ($v0)                     
+  0x80067114: nop                                     
+  0x80067118: sh       $v0, 0x7e($v1)                 
+  0x8006711C: lw       $ra, 0x20($sp)                 
+  0x80067120: lw       $s3, 0x1c($sp)                 
+  0x80067124: lw       $s2, 0x18($sp)                 
+  0x80067128: lw       $s1, 0x14($sp)                 
+  0x8006712C: lw       $s0, 0x10($sp)                 
+  0x80067130: jr       $ra                            
+  0x80067134: addiu    $sp, $sp, 0x28                 
+  0x80067138: addiu    $sp, $sp, -0x20                
+  0x8006713C: sw       $s2, 0x18($sp)                 
+  0x80067140: lui      $s2, 0x8007                    
+  0x80067144: lw       $v0, 0x2b60($s2)               
+  0x80067148: sw       $s0, 0x10($sp)                 
+  0x8006714C: move     $s0, $a0                       
+  0x80067150: sw       $s1, 0x14($sp)                 
+  0x80067154: addiu    $s1, $zero, 1                  
+  0x80067158: sw       $ra, 0x1c($sp)                 
+  0x8006715C: lw       $v0, 0x40($v0)                 
+  0x80067160: lw       $v1, 0x18($s0)                 
+  0x80067164: lw       $a0, 0x10($v0)                 
+  0x80067168: beq      $v1, $s1, 0x800671a8           

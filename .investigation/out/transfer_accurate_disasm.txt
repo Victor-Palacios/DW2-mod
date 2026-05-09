@@ -1,0 +1,20 @@
+
+file_400 (file 400):
+  Load address: 0x80063ADC
+  Instructions: 14
+  lbu + branch + sb patterns: 0
+
+STAG2000.PRO (file 402):
+  Load address: 0x80064078
+  Instructions: 129
+  lbu + branch + sb patterns: 0
+
+STAG3000.PRO (file 403):
+  Load address: 0x80063D04
+  Instructions: 34
+  lbu + branch + sb patterns: 0
+
+STAG4000.PRO (file 410):
+  Load address: 0x8006435C
+  Instructions: 0
+  lbu + branch + sb patterns: 0

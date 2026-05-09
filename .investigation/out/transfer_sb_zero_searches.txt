@@ -1,0 +1,56 @@
+
+file_400 (file 400):
+  Total sb instructions: 379
+  Sample sb patterns:
+    +0x00078B: sb $r0, 0x1424($r16)
+    +0x000793: sb $r0, 0x1824($r16)
+    +0x00079B: sb $r0, 0x1024($r0)
+    +0x00079F: sb $r0, 0x1CAF($r0)
+    +0x0007A3: sb $r0, 0x20AF($r0)
+    +0x0007A7: sb $r0, 0x24AF($r0)
+    +0x0007AF: sb $r0, 0x280C($r16)
+    +0x0007DF: sb $r0, 0x3424($r16)
+    +0x0007E7: sb $r0, 0x3824($r16)
+    +0x0007EF: sb $r0, 0x3024($r0)
+
+STAG2000.PRO (file 402):
+  Total sb instructions: 690
+  Sample sb patterns:
+    +0x0000BD: sb $r0, 0x066C($r4)
+    +0x000109: sb $r0, 0x066E($r4)
+    +0x00017D: sb $r0, 0x0671($r4)
+    +0x0002F7: sb $r0, 0x0000($r16)
+    +0x000310: sb $r8, 0x0000($r2)
+    +0x000314: sb $r0, 0x0000($r2)
+    +0x000387: sb $r0, 0x0F24($r0)
+    +0x0003C4: sb $r2, 0x0000($r3)
+    +0x0003FC: sb $r3, 0x0000($r4)
+    +0x000473: sb $r0, 0x0000($r16)
+
+STAG3000.PRO (file 403):
+  Total sb instructions: 806
+  Sample sb patterns:
+    +0x0003B1: sb $r0, 0x06D7($r4)
+    +0x000451: sb $r0, 0x06F2($r4)
+    +0x00057D: sb $r4, 0x0400($r25)
+    +0x00069C: sb $r2, 0x000C($r16)
+    +0x000813: sb $r0, 0x008C($r16)
+    +0x00081F: sb $r8, 0x21AC($r2)
+    +0x0008EA: sb $r1, 0xAFB4($r1)
+    +0x000A3B: sb $r3, 0x0424($r0)
+    +0x000A6F: sb $r3, 0x0424($r16)
+    +0x000A9B: sb $r2, 0xEC24($r16)
+
+STAG4000.PRO (file 410):
+  Total sb instructions: 900
+  Sample sb patterns:
+    +0x0000A6: sb $r16, 0x8006($r4)
+    +0x0000AA: sb $r0, 0x8006($r11)
+    +0x0000AE: sb $r28, 0x8006($r12)
+    +0x0000B2: sb $r0, 0x8006($r14)
+    +0x0000B6: sb $r8, 0x8006($r22)
+    +0x0000BA: sb $r24, 0x8006($r31)
+    +0x000111: sb $r0, 0x06B4($r4)
+    +0x000391: sb $r0, 0x0715($r4)
+    +0x000395: sb $r0, 0x0715($r4)
+    +0x000399: sb $r0, 0x0715($r4)

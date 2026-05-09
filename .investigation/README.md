@@ -27,6 +27,7 @@ need to re-run the scanners.
 | Topic | Status | Files |
 |---|---|---|
 | Tera Domain early unlock | Falsified — patch ships disabled | `REPORT.md` + `POSTSCRIPT_tera_domain.md` |
+| Transfer in dungeons | Inconclusive — narrowed to STAG4000.PRO, exact check not pinned. Static-only analysis hit its limit; needs DuckStation breakpoint or save-byte-diff to crack. | `REPORT_transfer.md` |
 
 When a new investigation starts, append a row here so future readers
 can see at a glance what's been tried and what worked.

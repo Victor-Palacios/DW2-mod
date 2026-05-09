@@ -1,0 +1,155 @@
+STAG4000.PRO (65536 bytes):
+
+Zero loads (addiu $rX, $zero, 0):
+  +0x000705
+  +0x000BF5
+  +0x000E9D
+  +0x0010AD
+  +0x0012E9
+  +0x0013F5
+  +0x0014B1
+  +0x001619
+  +0x0017B1
+  +0x0026BD
+  +0x0026D3
+  +0x003565
+  +0x0036CD
+  +0x00394D
+  +0x003B09
+  +0x003D21
+  +0x004CA9
+  +0x004EAD
+  +0x005AB9
+  +0x006369
+  +0x006DFD
+  +0x006E39
+  +0x006F65
+  +0x008B7D
+  +0x008F01
+  +0x009325
+  +0x0093AA
+  +0x009532
+  +0x009705
+  +0x009C36
+  +0x009D71
+  +0x00B061
+  +0x00B1F5
+  +0x00B25D
+  +0x00B2D1
+  +0x00B9DD
+  +0x00BAB6
+  +0x00BAD6
+  +0x00BAF6
+  +0x00BB16
+  +0x00BB36
+  +0x00BB56
+  +0x00BC65
+  +0x00BDE9
+  +0x00D43A
+  +0x00E54D
+  +0x00F201
+  +0x00F369
+  +0x00F539
+
+Store byte (sb) instructions:
+  +0x0000A6
+  +0x0000AA
+  +0x0000AE
+  +0x0000B2
+  +0x0000B6
+  +0x0000BA
+  +0x000111
+  +0x000391
+  +0x000395
+  +0x000399
+  +0x00039D
+  +0x0003A1
+  +0x0003A5
+  +0x0003A9
+  +0x0003AD
+  +0x0003B1
+  +0x0003B5
+  +0x0003B9
+  +0x0003BD
+  +0x0004C8
+  +0x0004D4
+  +0x0004E0
+  +0x0004EC
+  +0x0004F8
+  +0x000503
+  +0x00051C
+  +0x00051F
+  +0x00052F
+  +0x000543
+  +0x0005CB
+  +0x0005E3
+  +0x0005E7
+  +0x000608
+  +0x00060C
+  +0x000610
+  +0x000614
+  +0x000628
+  +0x000657
+  +0x000678
+  +0x0006FA
+  +0x000748
+  +0x00075C
+  +0x000768
+  +0x0007FF
+  +0x000937
+  +0x000973
+  +0x000983
+  +0x0009A7
+  +0x0009AF
+  +0x0009B7
+
+Potential disable sequences (zero load followed by sb):
+  +0x000705 (addiu $0, 0) -> +0x000748 (sb) [distance: 67 bytes]
+  +0x000BF5 (addiu $0, 0) -> +0x000C14 (sb) [distance: 31 bytes]
+  +0x0013F5 (addiu $0, 0) -> +0x001420 (sb) [distance: 43 bytes]
+  +0x001619 (addiu $0, 0) -> +0x00161F (sb) [distance: 6 bytes]
+  +0x0026BD (addiu $0, 0) -> +0x0026D8 (sb) [distance: 27 bytes]
+  +0x0026BD (addiu $0, 0) -> +0x0026E0 (sb) [distance: 35 bytes]
+  +0x0026D3 (addiu $0, 0) -> +0x0026D8 (sb) [distance: 5 bytes]
+  +0x0026D3 (addiu $0, 0) -> +0x0026E0 (sb) [distance: 13 bytes]
+  +0x0026D3 (addiu $0, 0) -> +0x002710 (sb) [distance: 61 bytes]
+  +0x003565 (addiu $0, 0) -> +0x003583 (sb) [distance: 30 bytes]
+  +0x003D21 (addiu $0, 0) -> +0x003D37 (sb) [distance: 22 bytes]
+  +0x004CA9 (addiu $0, 0) -> +0x004CC7 (sb) [distance: 30 bytes]
+  +0x004CA9 (addiu $0, 0) -> +0x004CD7 (sb) [distance: 46 bytes]
+  +0x004CA9 (addiu $0, 0) -> +0x004CDB (sb) [distance: 50 bytes]
+  +0x004CA9 (addiu $0, 0) -> +0x004CE0 (sb) [distance: 55 bytes]
+  +0x004CA9 (addiu $0, 0) -> +0x004CE7 (sb) [distance: 62 bytes]
+  +0x004CA9 (addiu $0, 0) -> +0x004CEA (sb) [distance: 65 bytes]
+  +0x004EAD (addiu $0, 0) -> +0x004EBF (sb) [distance: 18 bytes]
+  +0x004EAD (addiu $0, 0) -> +0x004EDB (sb) [distance: 46 bytes]
+  +0x004EAD (addiu $0, 0) -> +0x004EEB (sb) [distance: 62 bytes]
+  +0x005AB9 (addiu $0, 0) -> +0x005AF2 (sb) [distance: 57 bytes]
+  +0x006DFD (addiu $0, 0) -> +0x006E1D (sb) [distance: 32 bytes]
+  +0x008F01 (addiu $0, 0) -> +0x008F28 (sb) [distance: 39 bytes]
+  +0x0093AA (addiu $0, 0) -> +0x0093EF (sb) [distance: 69 bytes]
+  +0x009532 (addiu $0, 0) -> +0x009577 (sb) [distance: 69 bytes]
+  +0x009C36 (addiu $0, 0) -> +0x009C7B (sb) [distance: 69 bytes]
+  +0x00B2D1 (addiu $0, 0) -> +0x00B307 (sb) [distance: 54 bytes]
+  +0x00B2D1 (addiu $0, 0) -> +0x00B313 (sb) [distance: 66 bytes]
+  +0x00B2D1 (addiu $0, 0) -> +0x00B31F (sb) [distance: 78 bytes]
+  +0x00B9DD (addiu $0, 0) -> +0x00BA10 (sb) [distance: 51 bytes]
+  +0x00BAB6 (addiu $0, 0) -> +0x00BACC (sb) [distance: 22 bytes]
+  +0x00BAB6 (addiu $0, 0) -> +0x00BAEC (sb) [distance: 54 bytes]
+  +0x00BAD6 (addiu $0, 0) -> +0x00BAEC (sb) [distance: 22 bytes]
+  +0x00BAD6 (addiu $0, 0) -> +0x00BB0C (sb) [distance: 54 bytes]
+  +0x00BAF6 (addiu $0, 0) -> +0x00BB0C (sb) [distance: 22 bytes]
+  +0x00BAF6 (addiu $0, 0) -> +0x00BB2C (sb) [distance: 54 bytes]
+  +0x00BB16 (addiu $0, 0) -> +0x00BB2C (sb) [distance: 22 bytes]
+  +0x00BB16 (addiu $0, 0) -> +0x00BB4C (sb) [distance: 54 bytes]
+  +0x00BB36 (addiu $0, 0) -> +0x00BB4C (sb) [distance: 22 bytes]
+  +0x00BB36 (addiu $0, 0) -> +0x00BB6C (sb) [distance: 54 bytes]
+  +0x00BB56 (addiu $0, 0) -> +0x00BB6C (sb) [distance: 22 bytes]
+  +0x00D43A (addiu $0, 0) -> +0x00D44C (sb) [distance: 18 bytes]
+  +0x00D43A (addiu $0, 0) -> +0x00D45B (sb) [distance: 33 bytes]
+  +0x00E54D (addiu $0, 0) -> +0x00E587 (sb) [distance: 58 bytes]
+  +0x00E54D (addiu $0, 0) -> +0x00E594 (sb) [distance: 71 bytes]
+  +0x00F201 (addiu $0, 0) -> +0x00F203 (sb) [distance: 2 bytes]
+  +0x00F201 (addiu $0, 0) -> +0x00F20F (sb) [distance: 14 bytes]
+  +0x00F201 (addiu $0, 0) -> +0x00F213 (sb) [distance: 18 bytes]
+  +0x00F201 (addiu $0, 0) -> +0x00F217 (sb) [distance: 22 bytes]

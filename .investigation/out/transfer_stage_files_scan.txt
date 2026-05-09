@@ -1,0 +1,28 @@
+
+file_382: lui(0x8006)=0 lbu_0=0 lbu_d=0 sb=23
+
+file_394: lui(0x8006)=0 lbu_0=0 lbu_d=0 sb=20
+
+file_398: lui(0x8006)=0 lbu_0=0 lbu_d=0 sb=33
+
+file_399: lui(0x8006)=0 lbu_0=0 lbu_d=0 sb=7
+
+file_400: lui(0x8006)=77 lbu_0=20 lbu_d=0 sb=107
+
+file_401: lui(0x8006)=110 lbu_0=5 lbu_d=0 sb=26
+
+file_402: lui(0x8006)=234 lbu_0=33 lbu_d=7 sb=140
+
+file_403: lui(0x8006)=85 lbu_0=14 lbu_d=13 sb=133
+
+file_407: lui(0x8006)=0 lbu_0=1 lbu_d=0 sb=32
+
+file_410: lui(0x8006)=75 lbu_0=81 lbu_d=2 sb=225
+
+file_411: lui(0x8006)=0 lbu_0=0 lbu_d=0 sb=1
+
+file_413: lui(0x8006)=0 lbu_0=0 lbu_d=0 sb=10
+
+file_416: lui(0x8006)=0 lbu_0=3 lbu_d=0 sb=25
+
+file_422: lui(0x8006)=0 lbu_0=0 lbu_d=0 sb=28
