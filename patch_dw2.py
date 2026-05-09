@@ -43,7 +43,7 @@ ENABLE_TECH_ORDERING: bool = True
 # Experimental: open Tera Domain at story_progress >= 9 (start of Mission 19,
 # Core Tower) rather than the vanilla >= 10 (post-credits). One-byte edit to
 # the gate's table entry in STAG3000.PRO; see .investigation/REPORT.md.
-ENABLE_TERA_DOMAIN_EARLY_UNLOCK: bool = True
+ENABLE_TERA_DOMAIN_EARLY_UNLOCK: bool = False
 
 # Constant added to the higher parent's DP when DNA Digivolving (vanilla = 1).
 # E.g. with N=3, fusing a DP-4 + DP-2 yields a DP-7 child instead of DP-5.
@@ -198,7 +198,7 @@ TECH_ORDERING_FREE_REGION_LEN = 0x88
 # than "second-to-last boss beaten". See `.investigation/REPORT.md`.
 TERA_DOMAIN_GATE_OFFSET = 0xFCE0
 TERA_DOMAIN_GATE_VANILLA = bytes([0x70, 0x3B, 0x06, 0x80])  # &is_story_lt_10
-TERA_DOMAIN_GATE_PATCHED = bytes([0x60, 0x3B, 0x06, 0x80])  # &is_story_lt_9
+TERA_DOMAIN_GATE_PATCHED = bytes([0x50, 0x3B, 0x06, 0x80])  # &is_story_lt_8
 
 
 # DP Gain per fusion — adapted from DW2-TT/ASM Hacks/US/DP Sum-Up.asm.

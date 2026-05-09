@@ -34,14 +34,16 @@ any PSX emulator that accepts CHD).
   result of a DNA Digivolution. Vanilla is +1, so e.g. fusing DP-4 + DP-2
   yields a DP-7 child instead of DP-5. Reaches Mega-tier DP thresholds
   much faster.
-- **Tera Domain early unlock** *(experimental)* — the post-game Tera
-  Domain map entry is gated by the `is_story_lt_10` script function in
-  `STAG3000.PRO`'s overworld script tables. This patch repoints the gate
-  at the existing `is_story_lt_9` stub instead, so Tera Domain becomes
-  accessible as soon as `story_progress` reaches 9 (start of Mission 19,
-  Core Tower) rather than 10 (post-credits). Single-byte edit at file
-  offset `0xFCE0` of `STAG3000.PRO`. See `.investigation/REPORT.md` for
-  the full reverse-engineering write-up.
+- **Tera Domain early unlock** *(broken — disabled by default, kept for
+  reference)* — the patch repoints a script-table record in
+  `STAG3000.PRO` whose condition was the only disc-wide reference to the
+  `is_story_lt_10` stub. We expected this to be the Tera Domain map-entry
+  gate, but empirical testing showed the patch has no visible effect on
+  the world map. The record evidently gates something else (Jijimon→Ben
+  mayor swap, end-of-credits NPC dialogue, etc.). The flag is left in the
+  CONFIG block as `False` so the source of the experiment isn't lost; do
+  not enable. See `.investigation/REPORT.md` for the falsified hypothesis
+  and what was learned.
 
 US (NTSC-U) version only. The script verifies it has a vanilla disc before
 patching and aborts cleanly on a re-run (so you can't accidentally
